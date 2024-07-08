@@ -15,6 +15,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity(name = "c_user")
 @SQLDelete(sql = "UPDATE c_user SET is_deleted = true WHERE id=?")
 @FilterDef(name="deletedUserFilter", parameters = @ParamDef(name = "is_deleted", type = Boolean.class))
